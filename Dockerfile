@@ -127,5 +127,7 @@ RUN sed -i -E "s/APP_ENV=dev/APP_ENV=${APP_ENV:-prod}/" .env
 RUN composer install --no-interaction
     # && chmod -R a+w $DOCROOT
 
+USER root
+
 CMD ["/start.sh"]
 
