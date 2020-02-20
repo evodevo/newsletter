@@ -10,8 +10,8 @@ mkdir /var/tmp/nginx
 sed -i -E "s/^;listen.owner = .*/listen.owner = nonroot/" /etc/php7/php-fpm.d/www.conf
 
 # make current user the executor of nginx and php-fpm expressly for local environment
-sed -i -E "s/^user = .*/user = nonroot/" /etc/php7/php-fpm.d/www.conf
-sed -i -E "s/^group = (.*)/;group = \1/" /etc/php7/php-fpm.d/www.conf
+#sed -i -E "s/^user = .*/user = nonroot/" /etc/php7/php-fpm.d/www.conf
+#sed -i -E "s/^group = (.*)/;group = \1/" /etc/php7/php-fpm.d/www.conf
 sed -i -E "s/^user .*/user nonroot;/" /etc/nginx/nginx.conf
 
 supervisord --nodaemon --configuration /etc/supervisord.conf
