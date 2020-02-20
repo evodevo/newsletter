@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="newsletter-form-wrapper col-sm-10 col-md-7 col-lg-5 col-xl-4 mx-auto">
+        {{ include('_flash_messages.html.twig') }}
+
+        <h1 class="text-center">{{ 'title.subscribe'|trans }}</h1>
+
+        {{ form_start(form, {'attr': {'class': 'newsletter-form' }}) }}
+        {{ form_row(form.name, {'attr': {'placeholder': 'Enter your name', 'data-bouncer-message': 'Name is required' }}) }}
+        {{ form_row(form.email, {'attr': {
+            'placeholder': 'Enter your email',
+            'data-validate-email': true,
+            'data-validation-url': url('newsletter_validate_email'),
+            'data-bouncer-message': 'Please enter a valid email'
+        }}) }}
+        {{ form_row(form.categories) }}
+        <button type="submit" class="btn btn-primary btn-block">
+            {{ 'label.subscribe'|trans }}
+        </button>
+        {{ form_end(form) }}
+    </div>
+{% endblock %}

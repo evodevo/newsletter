@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="title.subscribe">
+                <source>title.subscribe</source>
+                <target>Subscribe to our newsletter</target>
+            </trans-unit>
+            <trans-unit id="label.name">
+                <source>label.name</source>
+                <target>Name</target>
+            </trans-unit>
+            <trans-unit id="label.email">
+                <source>label.email</source>
+                <target>Email</target>
+            </trans-unit>
+            <trans-unit id="label.categories">
+                <source>label.categories</source>
+                <target>Choose one or more categories</target>
+            </trans-unit>
+            <trans-unit id="label.subscribe">
+                <source>label.subscribe</source>
+                <target>Subscribe</target>
+            </trans-unit>
+            <trans-unit id="subscription.created_successfully">
+                <source>subscription.created_successfully</source>
+                <target>Subscription successful!</target>
+            </trans-unit>
+            <trans-unit id="title.login">
+                <source>title.login</source>
+                <target>Admin Login</target>
+            </trans-unit>
+            <trans-unit id="label.username">
+                <source>label.username</source>
+                <target>Username</target>
+            </trans-unit>
+            <trans-unit id="label.password">
+                <source>label.password</source>
+                <target>Password</target>
+            </trans-unit>
+            <trans-unit id="action.sign_in">
+                <source>action.sign_in</source>
+                <target>Login</target>
+            </trans-unit>
+
+            <trans-unit id="menu.admin_header">
+                <source>menu.admin_header</source>
+                <target>Newsletter Admin</target>
+            </trans-unit>
+            <trans-unit id="menu.logout">
+                <source>menu.logout</source>
+                <target>Logout</target>
+            </trans-unit>
+            <trans-unit id="subscriptions.table.name">
+                <source>subscriptions.table.name</source>
+                <target>Name</target>
+            </trans-unit>
+            <trans-unit id="subscriptions.table.email">
+                <source>subscriptions.table.email</source>
+                <target>Email</target>
+            </trans-unit>
+            <trans-unit id="subscriptions.table.categories">
+                <source>subscriptions.table.categories</source>
+                <target>Categories</target>
+            </trans-unit>
+            <trans-unit id="subscriptions.table.created_at">
+                <source>subscriptions.table.created_at</source>
+                <target>Created At</target>
+            </trans-unit>
+            <trans-unit id="subscriptions.table.actions">
+                <source>subscriptions.table.actions</source>
+                <target>Actions</target>
+            </trans-unit>
+            <trans-unit id="actions.edit">
+                <source>actions.edit</source>
+                <target>Edit</target>
+            </trans-unit>
+            <trans-unit id="actions.delete">
+                <source>actions.delete</source>
+                <target>Delete</target>
+            </trans-unit>
+            <trans-unit id="title.edit_subscription">
+                <source>title.edit_subscription</source>
+                <target>Edit Subscription</target>
+            </trans-unit>
+            <trans-unit id="label.save">
+                <source>label.save</source>
+                <target>Save</target>
+            </trans-unit>
+            <trans-unit id="label.cancel">
+                <source>label.cancel</source>
+                <target>Cancel</target>
+            </trans-unit>
+            <trans-unit id="subscription.updated_successfully">
+                <source>subscription.updated_successfully</source>
+                <target>Subscription updated</target>
+            </trans-unit>
+            <trans-unit id="subscription.deleted_successfully">
+                <source>subscription.deleted_successfully</source>
+                <target>Subscription deleted successfully.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

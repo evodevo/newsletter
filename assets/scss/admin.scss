@@ -1,0 +1,110 @@
+
+.delete-form {
+  display: inline-block;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+  padding: 0.3rem 1rem 0.3rem 1rem;
+  border-right: 1px solid #dee2e6;
+}
+
+.table th:first-child, .table td:first-child {
+  border-left: 1px solid #dee2e6;
+}
+
+.table tr:last-child td {
+  border-bottom: 1px solid #dee2e6;
+}
+
+table.table thead th {
+  position: relative;
+}
+
+.table-fixed {
+  table-layout: fixed;
+}
+
+.table-fixed td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.badge {
+  font-size: 0.75rem;
+}
+
+table.table thead {
+  color: #707d8b;
+}
+
+table.table thead .sorting,
+table.table thead .sorting_asc,
+table.table thead .sorting_desc {
+  cursor: pointer;
+}
+
+//table.table thead .sorting:hover {
+//  border-color: #707d8b;
+//}
+
+table.table thead .sorting a,
+table.table thead .sorting_asc a,
+table.table thead .sorting_desc a {
+  color: #2C3E50;
+}
+
+table.table thead .sorting:after,
+table.table thead .sorting_asc:after,
+table.table thead .sorting_desc:after {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  display: block;
+  font-weight: 900;
+  font-family: 'FontAwesome';
+}
+
+table.table thead .sorting:after {
+  content: "\f0dc";
+  color: #2C3E50;
+  font-size: 0.8em;
+  padding-top: 0.12em;
+}
+
+table.table thead .sorting_desc:after {
+  content: "\f0dd" !important;
+}
+
+table.table thead .sorting_asc:after {
+  content: "\f0de" !important;
+}
+
+.td-inner {
+  height: 3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0.8rem 0;
+  white-space: nowrap;
+}
+
+.btn-delete {
+  padding: 0;
+  border: none;
+  vertical-align: baseline;
+  margin-left: 0.9rem;
+}
+
+.empty-text-wrapper {
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.popover .badge {
+  margin-right: 4px;
+}
+
+.popover-header {
+  display: none;
+}

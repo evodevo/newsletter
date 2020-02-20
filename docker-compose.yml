@@ -1,0 +1,14 @@
+web:
+  build: .
+  environment:
+    APP_ENV: prod
+  ports:
+    - '8080:8080'
+web-dev:
+  build: .
+  environment:
+    APP_ENV: dev
+  ports:
+    - '8081:8080'
+  volumes:
+    - '.:/docroot'

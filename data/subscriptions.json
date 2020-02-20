@@ -1,0 +1,24 @@
+[
+    {
+        "name": "aasd",
+        "email": "asd@asd.asd",
+        "categories": [
+            "sports"
+        ],
+        "createdAt": 1582157697,
+        "id": 1
+    },
+    {
+        "name": "asdaaa",
+        "email": "asd@asd.asd123",
+        "categories": [
+            "sports",
+            "technology",
+            "politics",
+            "weather",
+            "business"
+        ],
+        "createdAt": 1582158282,
+        "id": 2
+    }
+]

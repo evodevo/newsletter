@@ -1,0 +1,80 @@
+//$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+
+@import "~bootswatch/dist/flatly/variables";
+//@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+@import "~bootstrap/scss/bootstrap";
+@import "~font-awesome/scss/font-awesome";
+@import "~bootswatch/dist/flatly/bootswatch";
+
+body, html {
+  height: 100%;
+  min-height: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.newsletter-form-wrapper {
+  border: 1px solid #aabed1;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#login-page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+//label.required:after, legend.required:after {
+//  content: "* ";
+//  color: red;
+//  margin-left: 4px;
+//}
+
+label.required:before, legend.required:before {
+  content: "* ";
+  color: red;
+  right: 4px;
+}
+
+.help-block {
+  font-size: 1.2rem;
+}
+
+//.has-error .control-label, .has-error .checkbox {
+//  color: inherit;
+//}
+
+.was-validated .custom-control-input:invalid ~ .custom-control-label,
+.custom-control-input.is-invalid ~ .custom-control-label {
+  color: inherit;
+}
+
+.was-validated .custom-control-input:invalid ~ .custom-control-label::before,
+.custom-control-input.is-invalid ~ .custom-control-label::before {
+  border-color: inherit;
+}
+
+.form-group {
+  margin-bottom: 1.6rem;
+}
+
+.error-message {
+  font-size: 0.7rem;
+  color: red;
+  margin-top: 4px;
+  position: absolute;
+}
+
+.form-control.error {
+  border-color: red;
+}
+
+.col-form-label {
+  padding-top: 0;
+}
