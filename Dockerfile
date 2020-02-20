@@ -66,6 +66,7 @@ ENV NGINX_CONFD_DIR /etc/nginx/conf.d
 COPY docker/php.ini $PHP_INI_DIR/
 # COPY nginx.conf $NGINX_CONFD_DIR/default.conf
 COPY docker/nginx.conf $NGINX_CONFD_DIR/newsletter.conf
+COPY docker/default.conf $NGINX_CONFD_DIR/default.conf
 COPY docker/supervisor.programs.ini /etc/supervisor.d/
 COPY docker/start.sh /
 
