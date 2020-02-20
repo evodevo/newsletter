@@ -4,6 +4,7 @@ namespace App\Repository;
 
 use App\Entity\Subscription;
 use Jajo\JSONDB;
+use Ramsey\Uuid\Uuid;
 
 /**
  * Class SubscriptionFileRepository
@@ -95,6 +96,7 @@ class SubscriptionFileRepository implements SubscriptionRepositoryInterface
 
     /**
      * @param Subscription $subscription
+     * @throws \Exception
      */
     public function add(Subscription $subscription)
     {
@@ -111,8 +113,7 @@ class SubscriptionFileRepository implements SubscriptionRepositoryInterface
                 ->where(['id' => $subscription->getId()])
                 ->trigger();
         } else {
-            $id = count($this->jsonFile->from($this->fileName)->content) + 1;
-            $data['id'] = $id;
+            $data['id'] = Uuid::uuid4();
             $id = $this->jsonFile->insert($this->fileName, $data);
 
             $subscription->setId($id);
@@ -130,6 +131,10 @@ class SubscriptionFileRepository implements SubscriptionRepositoryInterface
             ->trigger();
     }
 
+    /**
+     * @param array $data
+     * @return Subscription
+     */
     protected function createEntity(array $data)
     {
         $entity = new Subscription();

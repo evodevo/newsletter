@@ -37,7 +37,12 @@ class SubscriptionController extends AbstractController
     }
 
     /**
-     * @Route("/admin/subscriptions/{id<\d+>}/edit", name="admin_subscription_edit", methods={"GET", "PATCH"})
+     * @Route(
+     *     "/admin/subscriptions/{id}/edit",
+     *     name="admin_subscription_edit",
+     *     methods={"GET", "PATCH"},
+     *     requirements={"id"="[0-9a-f-]+"}
+     * )
      *
      * @param Request $request
      * @param SubscriptionRepositoryInterface $subscriptionRepository
@@ -74,7 +79,12 @@ class SubscriptionController extends AbstractController
     }
 
     /**
-     * @Route("/admin/subscriptions/{id<\d+>}/delete", name="admin_subscription_delete", methods={"POST"})
+     * @Route(
+     *     "/admin/subscriptions/{id}/delete",
+     *     name="admin_subscription_delete",
+     *     methods={"POST"},
+     *     requirements={"id"="[0-9a-f-]+"}
+     * )
      *
      * @param Request $request
      * @param SubscriptionRepositoryInterface $subscriptionRepository

@@ -12,7 +12,7 @@ use App\Validator\Constraints\UniqueEmail;
 class Subscription
 {
     /**
-     * @var int
+     * @var string
      */
     private $id;
 
