@@ -152,6 +152,8 @@ RUN yarn install --non-interactive
 RUN yarn build
     # && chmod -R a+w $DOCROOT
 
+VOLUME ["$DOCROOT/data"]
+
 USER root
 
 CMD ["/start.sh"]
