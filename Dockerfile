@@ -43,7 +43,7 @@ RUN \
     && mkdir -p /run/nginx \
     \
     # forward nginx logs to docker log collector
-    && sed -i -E "s/error_log .+/error_log \/dev\/stderr warn;/" /etc/nginx/nginx.conf \
+    && sed -i -E "s/error_log .+/error_log \/dev\/stderr debug;/" /etc/nginx/nginx.conf \
     && sed -i -E "s/access_log .+/access_log \/dev\/stdout main;/" /etc/nginx/nginx.conf \
     \
     # install supervisor
