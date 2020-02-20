@@ -7,15 +7,30 @@ use App\Repository\SubscriptionRepositoryInterface;
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\ConstraintValidator;
 
+/**
+ * Class UniqueEmailValidator
+ * @package App\Validator\Constraints
+ */
 class UniqueEmailValidator extends ConstraintValidator
 {
+    /**
+     * @var SubscriptionRepositoryInterface
+     */
     protected $subscriptionRepository;
 
+    /**
+     * UniqueEmailValidator constructor.
+     * @param SubscriptionRepositoryInterface $subscriptionRepository
+     */
     public function __construct(SubscriptionRepositoryInterface $subscriptionRepository)
     {
         $this->subscriptionRepository = $subscriptionRepository;
     }
 
+    /**
+     * @param mixed $value
+     * @param Constraint $constraint
+     */
     public function validate($value, Constraint $constraint)
     {
         $entity = $this->context->getObject();

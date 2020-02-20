@@ -51,11 +51,6 @@
                                     {% endfor %}
                                 {% endif %}
                             </div>
-                            {#<div class="d-none" id="subscription-{{ subscription.id }}-categories">#}
-                                {#{% for category in subscription.categories %}#}
-                                    {#<span class="badge badge-info">{{ category }}</span>#}
-                                {#{% endfor %}#}
-                            {#</div>#}
                         </td>
                         <td><div class="td-inner">{{ subscription.createdAt | date('Y-m-d H:i:s') }}</div></td>
                         <td>
@@ -64,7 +59,6 @@
                             {{ include('admin/newsletter/_delete_form.html.twig', {subscription: subscription}, with_context = false) }}
                             </div>
                         </td>
-                        {#<td><a href="{{ path('admin_subscription_delete', {'id': subscription.id}) }}">{{ 'actions.delete' | trans }}</a></td>#}
                     </tr>
                 {% endfor %}
                 </tbody>

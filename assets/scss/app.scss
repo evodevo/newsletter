@@ -1,7 +1,5 @@
-//$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 
 @import "~bootswatch/dist/flatly/variables";
-//@import "~bootstrap-sass/assets/stylesheets/bootstrap";
 @import "~bootstrap/scss/bootstrap";
 @import "~font-awesome/scss/font-awesome";
 @import "~bootswatch/dist/flatly/bootswatch";
@@ -30,12 +28,6 @@ h1 {
   justify-content: center;
 }
 
-//label.required:after, legend.required:after {
-//  content: "* ";
-//  color: red;
-//  margin-left: 4px;
-//}
-
 label.required:before, legend.required:before {
   content: "* ";
   color: red;
@@ -45,10 +37,6 @@ label.required:before, legend.required:before {
 .help-block {
   font-size: 1.2rem;
 }
-
-//.has-error .control-label, .has-error .checkbox {
-//  color: inherit;
-//}
 
 .was-validated .custom-control-input:invalid ~ .custom-control-label,
 .custom-control-input.is-invalid ~ .custom-control-label {

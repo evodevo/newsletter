@@ -1,7 +1,6 @@
 <form action="{{ url('admin_subscription_delete', {id: subscription.id}) }}" method="post" data-confirmation="true" class="delete-form d-inline-block">
     <input type="hidden" name="token" value="{{ csrf_token('delete') }}" />
     <button type="submit" class="btn btn-link btn-delete">
-        {#<i class="fa fa-trash" aria-hidden="true"></i>#}
         {{ 'actions.delete'|trans }}
     </button>
 </form>

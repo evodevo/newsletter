@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="{{ asset('build/css/app.css') }}">
     {% endblock %}
 
-    {#<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />#}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
 </head>
 
 <body id="{% block body_id %}{% endblock %}">
@@ -16,18 +16,10 @@
 {% block header %}{% endblock %}
 
 <div class="container body-container">
-    {% block body %}
-        {#<div class="row">#}
-            {#<div id="main" class="col-sm-9">#}
-                {#{% block main %}{% endblock %}#}
-            {#</div>#}
-        {#</div>#}
-    {% endblock %}
+    {% block body %}{% endblock %}
 </div>
 
 {% block javascripts %}
-    {#<script src="{{ asset('build/manifest.js') }}"></script>#}
-    {#<script src="{{ asset('build/js/common.js') }}"></script>#}
     <script src="{{ asset('build/runtime.js') }}"></script>
     <script src="{{ asset('build/js/app.js') }}"></script>
 {% endblock %}

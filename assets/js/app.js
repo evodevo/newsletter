@@ -8,24 +8,17 @@ document.addEventListener('DOMContentLoaded', function() {
     submitButton.textContent = 'Please fill the form';
 
     const validateEmail = async (field) => {
-        // console.log('custom email validation for field: ', field);
-
         const hasEmailValidation = field.getAttribute('data-validate-email');
         if (!hasEmailValidation) {
-            // console.log('missing data-validate-email attribute');
             return false;
         }
 
         let validationUrl = field.getAttribute('data-validation-url');
         if (!validationUrl) {
-            // console.log('no data-validation-url, field is valid');
             return false;
         }
 
-        // console.log('validating value: ', field.value);
-
         if (!field.value) {
-            // console.log('field has no value');
             return false;
         }
 

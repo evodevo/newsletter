@@ -1,5 +1,4 @@
 import 'bootstrap/js/src/alert';
-// import 'bootstrap/js/src/tooltip';
 import 'bootstrap/js/src/popover';
 import Swal from 'sweetalert2'
 
@@ -30,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     }, false);
 
-    // $('[data-toggle="tooltip"]').tooltip();
     $('[data-toggle="popover"]').popover();
 
 }, false);

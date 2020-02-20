@@ -11,8 +11,14 @@ use Symfony\Component\Validator\Constraint;
  */
 class UniqueEmail extends Constraint
 {
+    /**
+     * @var string
+     */
     public $message = 'The email "%string%" is already subscribed.';
 
+    /**
+     * @return string
+     */
     public function validatedBy()
     {
         return get_class($this).'Validator';
