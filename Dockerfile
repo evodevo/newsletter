@@ -145,7 +145,7 @@ USER nonroot
 COPY --chown=nonroot:nonroot / $DOCROOT/
 
 # tweak to set env to prod, and re-do composer install
-RUN sed -i -E "s/APP_ENV=dev/APP_ENV=${APP_ENV:-dev}/" .env
+RUN sed -i -E "s/APP_ENV=dev/APP_ENV=${APP_ENV:-prod}/" .env
 
 RUN composer install --no-interaction
 RUN yarn install --non-interactive

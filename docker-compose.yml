@@ -1,7 +1,7 @@
 web:
   build: .
   environment:
-    APP_ENV: dev
+    APP_ENV: prod
   ports:
     - '8080:8080'
 web-dev:
