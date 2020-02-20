@@ -1,4 +1,3 @@
-
 .idea
 
 ###> symfony/framework-bundle ###
@@ -19,3 +18,4 @@ yarn-error.log
 ###< symfony/webpack-encore-bundle ###
 
 supervisor.pid
+data/subscriptions.json
