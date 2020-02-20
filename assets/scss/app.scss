@@ -78,3 +78,7 @@ label.required:before, legend.required:before {
 .col-form-label {
   padding-top: 0;
 }
+
+.form-control.is-invalid, .was-validated .form-control:invalid {
+  background-size: calc(.75em + .8rem) calc(.75em + .375rem);
+}
