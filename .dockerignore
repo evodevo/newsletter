@@ -1,3 +1,16 @@
 public/build
 node_modules
 data/subscriptions.json
+
+config/packages/dev/
+config/packages/test/
+docker/dev/
+var/
+vendor/
+.dockerignore
+.gitignore
+README.md
+
+.git/
+.idea/
+.DS_Store/
