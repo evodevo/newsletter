@@ -1,6 +1,6 @@
 # Newsletter app
 
-Newsletter app based on Synfony 4 framework
+Newsletter app demo based on Synfony 4 framework
 
 ### Demo
 
