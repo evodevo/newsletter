@@ -1,8 +1,8 @@
-# Newsletter app
+# Demo newsletter app
 
 Newsletter app demo based on Synfony 4 framework
 
-### Demo
+### Hosted demo
 
 Frontend: http://fierce-hollows-42219.herokuapp.com/  
 Admin : http://fierce-hollows-42219.herokuapp.com/admin  
